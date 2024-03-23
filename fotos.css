@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+    transition: 1s;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+    object-fit: cover;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photo {
+    margin: 10px;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.photo:hover {
+    transform: scale(1.3);
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+
+footer {
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+    
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.footer-list {}
+
+@media (max-width: 768px) {
+
+   footer {
+        margin-top: 50px;
+    }
+
+    .footer-list {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .photo {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+   .footer-navigation {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+}
